@@ -1,0 +1,13 @@
+[package]
+name = "queue-consumer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ctrlc = "3.2.0"
+aws-config = "0.3.0"
+aws-sdk-sqs = "0.3.0"
+aws-smithy-client = { version = "0.33.1", features = ["test-util"]}
+aws-smithy-http = "0.33.1"
+http = "0.2.6"
+tokio = { version = "1", features = ["full"] }
